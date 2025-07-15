@@ -41,19 +41,17 @@ You only need Python 3.x installed on your system.
 
 ## 🛠 How It Works
 
-The `num_to_word` function in `main.py` recursively breaks down the input number into smaller parts and uses the predefined word lists in `constants.py` to construct the final word representation.
+The `num_to_word` function in `main.py` recursively breaks down the input number into smaller parts and uses the predefined word lists/dictionaries in `constants.py` to construct the final word representation.
 
-* Numbers **below 20** are directly mapped from the `under_20` list.
-* Numbers **below 100** are handled by combining words from the `tens` list and recursively calling `num_to_word` for the remainder.
-* For numbers **100 and above**, the function identifies the largest power of 1000 (hundred, thousand, million, etc.) that is less than or equal to the number, converts the significant part, and then recursively handles the remainder.
+* Numbers **below 20** are directly mapped from the `UNDER_20` tuple.
+* Numbers **below 100** are handled by combining words from the `TENS` tuple and recursively calling `num_to_word` for the remainder.
+* For numbers **100 and above**, the function identifies the largest power of 1000 (hundred, thousand, million, etc.) that is less than or equal to the number (using `ABOVE_100` dictionary), converts the significant part, and then recursively handles the remainder. Input validation ensures that only non-negative integers within a supported range are processed, raising `TypeError` or `ValueError` for invalid inputs.
 
----
 
 ## 🙏 Contributing
 
 Contributions are always welcome! If you have suggestions for improvements or new features, please feel free to open an issue or submit a pull request.
 
----
 
 ## 📜 License
 
