@@ -55,4 +55,4 @@ Contributions are always welcome! If you have suggestions for improvements or ne
 
 ## 📜 License
 
-This project is open-sourced under the MIT License. See the `LICENSE` file (you'll need to create this if you haven't already) for more details.
+This project is open-sourced under the MIT License. See the `LICENSE` file for more details.
